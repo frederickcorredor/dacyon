@@ -1,0 +1,579 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins';
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 12px;
+    background: linear-gradient(145deg, #eeeded, #ffffff);
+    position: relative;
+}
+
+header{
+    width: 100%;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(2, 30, 87, 0.986);
+    overflow: hidden;
+    background-image: url('https://renovexenlinea.com/wp-content/uploads/2025/04/confidence-space-businesswoman-portrait-laptop-consulting-online-research-policy-review-happy-lawyer-legal-advisor-technology-case-schedule-email-attorney-advice-scaled-e1744383117552.jpg');
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+
+    p{
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 30px;
+        margin-left: 16px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.986);
+    }
+
+    h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 64px;
+        margin-left: 16px;
+        color: #053767;
+        text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.986);
+    }
+}
+
+.menu{
+    width: 12%;
+    min-width: 200px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+    position: fixed;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    z-index: 12;
+    background: linear-gradient(35deg, #005fbc, #707070b6);
+    box-shadow: 0px 0px 10px rgba(2, 30, 87, 0.986);
+
+}
+
+main{
+    width: 87%;
+    min-width: 380px;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: #feffff solid 2px;
+
+     a{
+        width: 70%;
+
+        img{
+            width: 100%;
+            height: auto;
+
+            &:hover{
+                transform: scale(.99);
+            }
+        }
+     }
+}
+
+
+.menu-movil{
+    display: none;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 12px 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+    position: fixed;
+    overflow: hidden;
+    top: 0px;
+    z-index: 12;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(2, 30, 87, 0.986);
+}
+
+.navegacion-movil{
+    position: fixed;
+    z-index: 5000;
+    width: 55%;
+    padding: 6px;
+    min-height: 95vh;
+    top: 82px;
+    right: -250px;
+    display: flex;
+    opacity: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 16px;
+    background: linear-gradient(170deg, #0283c8d7, #04548ddc);
+    transition: .7s;
+    a{
+        text-decoration: none;
+        padding: 6px 16px;
+        border: solid 1px white;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        border-bottom-right-radius: 12px;
+        border-top-left-radius: 12px;
+        background: linear-gradient(170deg, #0283c8fc, #04548df7);
+        width: 83%;
+        text-align: center;
+            transition: all .3s ease-in-out;
+
+        &:hover{
+            transform: scale(.99);
+            box-shadow: 2px 1px 6px rgba(2, 30, 87, 0.986);
+        }
+    }
+
+    .boton-cta{
+        position: relative;
+        bottom: 4px;
+        border: 4px #fff double;
+        box-shadow: none;
+    }
+}
+
+.hamburguesa{
+    i{
+        font-size: 2rem;
+        color: #0284c8;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+            transform: scale(.99);
+        }
+    }
+}
+
+.navegacion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 10;
+    margin-top: 36px;
+    width: 100%;
+    a{
+        text-decoration: none;
+        padding: 6px 16px;
+        border: solid 1px white;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        border-bottom-right-radius: 12px;
+        border-top-left-radius: 12px;
+        background: linear-gradient(4deg, #0f3565, #cfcfcfb6);
+           
+            transition: all .3s ease-in-out;
+
+        &:hover{
+            transform: scale(.99);
+            box-shadow: 2px 1px 6px rgba(2, 30, 87, 0.986);
+        }
+    }
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+}
+
+video{
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 6;
+    border-radius: 32px;
+}
+
+.video{
+    width: 100%;
+    max-width: 1400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border: #0284c8 solid 2px;
+    margin-bottom: 24px;
+    border-top-right-radius: 64px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 64px;
+    background-image: url('https://renovexenlinea.com/wp-content/uploads/2025/03/abstract-blur-beautiful-luxury-hospital-clinic-interior-background-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+
+    h2{
+        font-size: 1.7rem;
+        color: #feffff;
+        margin-bottom: 12px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        text-align: center;
+        border-top-right-radius: 64px;
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 64px;
+        background-color: #0284c8;
+        padding: 24px;
+        position: relative;
+        top: 0px;
+        right: 16%;
+        z-index: 6;
+    }
+
+    .wrapper{
+        gap: 32px;
+
+        .imagensolo-pc{
+            width: 20%;
+            min-width: 280px;
+            margin-bottom: -30px;
+        }
+    }
+}
+
+.video-item{
+    background: linear-gradient(170deg, #0284c8, #04548d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(2, 30, 87, 0.986);
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    border-top-right-radius: 64px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 64px;
+    border-bottom-left-radius: 12px;
+}
+
+.video-item2{
+    background: linear-gradient(170deg, #0284c8, #04548d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(2, 30, 87, 0.986);
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 64px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 64px;
+}
+
+.video-item3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    border: 1px solid #57ade9;
+    border-radius: 32px;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        box-shadow: 0px 0px 10px rgba(2, 30, 87, 0.986);
+        transition: all .3s ease-in-out;
+        transform: scale(1.01);
+    }
+}
+
+section{
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contenido-body {
+    width: 40%;
+    min-width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 26px;
+}
+
+.imagen-body {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+
+.boton-cta{
+    margin-top: 16px;
+    text-decoration: none;
+        padding: 6px 16px;
+        border: solid 2px white;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        border-bottom-right-radius: 12px;
+        border-top-left-radius: 12px;
+        background: linear-gradient(170deg, #0283c8fc, #04548df7);
+        transition: all .3s ease-in-out;
+}
+
+.boton-cta:hover{
+    transform: scale(.99);
+    box-shadow: 2px 1px 6px rgba(2, 30, 87, 0.986);
+    transition: all 0.3s ease-in-out;
+}
+
+.texto-header{
+    width: 40%;
+    min-width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    bottom: 50px;
+    padding: 12px;
+    -webkit-animation: slide-in-fwd-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.7s both;
+	        animation: slide-in-fwd-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.7s both;
+
+    h1{
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ffffff;
+        text-shadow: 1px 1px 2px rgba(2, 30, 87, 0.986);
+    }
+}
+
+.imagen-header{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+
+    img{
+        max-width: 300px;
+        width: 17%;
+        height: auto;
+        border-radius: 8px;
+        position: absolute;
+        bottom: -12px;
+        filter: drop-shadow(0px 0px 10px rgba(2, 30, 87, 0.986));
+        z-index: 2;
+        -webkit-animation: slide-in-bottom 1..3s cubic-bezier(0.250, 0.460, 0.450, 0.940) .7s both;
+        animation: slide-in-bottom 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940)  .7s both;
+    }
+}
+
+.formulario{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    flex-wrap: wrap;
+    border: 2px solid #ffffff;
+    border-radius: 14px 14px 1px 14px;
+    align-content: flex-start;
+    position: relative;
+    min-height: 240px;
+    overflow: hidden;
+
+    h2{
+        text-align: left;
+        width: 100%;
+        padding: 16px;
+    }
+
+     form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        width: 95%;
+     }
+
+    .submit{
+        margin-top: 16px;
+    text-decoration: none;
+    padding: 6px 16px;
+    border: solid 2px white;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    background: linear-gradient(170deg, #0283c8fc, #04548df7);
+
+    transition: all .3s ease-in-out;
+    }    
+
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(170deg, #0284c8, #04548d);
+    color: white;
+    padding: 16px;
+    border-radius: 36px 36px 0px 0px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+@media screen and (max-width: 797px){
+   
+    body{
+        justify-content: center;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .contenido-body{
+        width: 100%;
+    }
+
+    .imagen-body{
+        width: 100%;
+    }
+   
+    p{
+        font-size: 1rem;
+    }
+
+    .menu-movil{
+        display: flex;
+        padding: 24px;
+    }
+
+    .menu{
+        display: none;
+    }
+    .logo{
+        width: 75px;
+        position: absolute;
+        left: 5%;
+         a{
+            width: 120px;
+
+            img{
+                width: 100%;
+                height: auto;
+
+                &:hover{
+                    transform: scale(.99);
+                }
+            }
+         }
+    }
+
+    header{
+        min-height: 75vh;
+        width: 100%;
+        background-position: -650px;
+
+        .wrapper{
+            justify-content: left;
+        }
+
+        h1{
+            font-size: 1.6rem;
+        }
+
+        p{
+            font-size: 1rem;
+            max-width: 60vw;
+        }
+    }
+
+    section{
+        padding: 6px;
+    }
+
+
+    .wrapper{
+        padding: 2px;
+    }
+
+    .formulario{
+        width: 360px;
+    }
+
+
+}
