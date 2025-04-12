@@ -505,6 +505,13 @@ footer{
     }
 }
 
+#headerproductos{
+
+    h1{
+        font-size: 41px;
+    }
+}
+
 
 .contenedor-peque{
     width: 100%;
@@ -590,6 +597,8 @@ footer{
         background-image: url(https://renovexenlinea.com/wp-content/uploads/2025/04/614.jpg);
         background-position: -623px -44px;
     }
+
+    
 
     .contenido-body{
         width: 100%;
