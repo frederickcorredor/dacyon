@@ -506,9 +506,13 @@ footer{
 }
 
 #headerproductos{
-
+    background-image: url(https://renovexenlinea.com/wp-content/uploads/2025/04/2212.jpg);
     h1{
         font-size: 41px;
+    }
+
+    p{
+        color: black;
     }
 }
 
