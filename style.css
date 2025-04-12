@@ -604,6 +604,10 @@ footer{
 
     #headerproductos{
         background-position: -462px -44px;
+
+        h1{
+            font-size: 27px;
+        }
     }
 
     .contenido-body{
