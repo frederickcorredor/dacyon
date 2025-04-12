@@ -499,6 +499,10 @@ footer{
 #headervideos{
     background-image: url(https://renovexenlinea.com/wp-content/uploads/2025/04/614.jpg);
 
+
+    h1{
+        font-size: 41px;
+    }
 }
 
 @media screen and (max-width: 797px){
@@ -509,6 +513,11 @@ footer{
 
     main{
         width: 100%;
+    }
+
+    #headervideos{
+        background-image: url(https://renovexenlinea.com/wp-content/uploads/2025/04/614.jpg);
+        background-position: -623px -44px;
     }
 
     .contenido-body{
