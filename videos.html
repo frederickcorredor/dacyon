@@ -48,6 +48,16 @@
     
     </div>
     <main>
+        <div class="registro" id="registro">
+            <h3>Ingresa usuario y contraseña para acceder</h3>
+            <form class="contenedor-formulario" onsubmit="return validarFormulario(event)">
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+                <input type="submit" value="Iniciar sesión" class="btn">
+            </form>
+        </div>
         <header id="headervideos">
             <h1>Mira los siguíentes videos</h1>
             <p>y comienza hoy mismo.</p>
@@ -61,7 +71,7 @@
                     
         
                     
-                        <div class="video-item3" style=" max-width: 550px;min-height: 520px;">
+                        <div class="video-item3" style=" max-width: 550px;min-height: 520px;" data-aos="fade-up" data-aos-duration="700"  data-aos-delay="650">
                             <video controls>
                                 <source src="https://renovexenlinea.com/wp-content/uploads/2025/04/3-PROGRAMA-DE-CAPACITACION-EN-VENTAS-1.mp4" type="video/mp4">
                                 Tu navegador no soporta el formato de video.
@@ -72,7 +82,7 @@
                                 sistema de ventas. Descubre cómo aprovechar al máximo cada oportunidad comercial.</p>
                             </div>
                         </div>
-                        <div class="video-item3" style=" max-width: 550px;min-height: 520px;">
+                        <div class="video-item3" style=" max-width: 550px;min-height: 520px;" data-aos="fade-up" data-aos-duration="700"  data-aos-delay="650">
                             <video controls>
                                 <source src="https://renovexenlinea.com/wp-content/uploads/2025/04/4-COMO-PRESENTARSE-1.mp4" type="video/mp4">
                                 Tu navegador no soporta el formato de video.
@@ -83,7 +93,7 @@
                                 Te mostramos cómo destacar desde el primer contacto.</p>
                             </div>
                         </div>
-                        <div class="video-item3"style=" max-width: 550px;min-height: 520px;">
+                        <div class="video-item3"style=" max-width: 550px;min-height: 520px;" data-aos="fade-up" data-aos-duration="700">
                             <video controls>
                                 <source src="https://renovexenlinea.com/wp-content/uploads/2025/04/5-NAVEGACION-DE-NUESTRAS-PAGINAS.mp4" type="video/mp4">
                                 Tu navegador no soporta el formato de video.
@@ -94,7 +104,7 @@
                                 Ideal para vender con seguridad y convicción.</p>
                             </div>
                         </div>
-                        <div class="video-item3"style=" max-width: 550px;min-height: 520px;">
+                        <div class="video-item3"style=" max-width: 550px;min-height: 520px;" data-aos="fade-up" data-aos-duration="700">
                             <video controls>
                                 <source src="https://renovexenlinea.com/wp-content/uploads/2025/04/6-PREGUNTAS-FRECUENTES-DE-CLIENTES.mp4" type="video/mp4">
                                 Tu navegador no soporta el formato de video.
@@ -105,7 +115,7 @@
                             <a href="https://renovexenlinea.com/wp-content/uploads/2025/04/PREGUNTAS-FRECUENTES.pdf" target="_blank">Descarga el PDF</a>
                         </div>
                         </div>
-                        <div class="video-item3"style=" max-width: 550px;min-height: 520px;">
+                        <div class="video-item3"style=" max-width: 550px;min-height: 520px;" data-aos="fade-up" data-aos-duration="700">
                             <video controls>
                                 <source src="https://renovexenlinea.com/wp-content/uploads/2025/04/7-LOGISTICA-1.mp4" type="video/mp4">
                                 Tu navegador no soporta el formato de video.
@@ -116,7 +126,7 @@
                                 Entiende el flujo completo para brindar un mejor servicio.</p>
                             </div>
                         </div>
-                        <div class="video-item3"style=" max-width: 550px;min-height: 520px;">
+                        <div class="video-item3"style=" max-width: 550px;min-height: 520px;" data-aos="fade-up" data-aos-duration="700">
                             <video controls>
                                 <source src="https://renovexenlinea.com/wp-content/uploads/2025/04/8-GRUPOS-DE-WHATSAPP.mp4" type="video/mp4">
                                 Tu navegador no soporta el formato de video.
@@ -126,7 +136,7 @@
                             <p>Aprende cómo funciona un grupo de WhatsApp  para mantener al día a tus clientes. </p>
                             </div>
                         </div>
-                        <div class="video-item3"style=" max-width: 550px;min-height: 520px;">
+                        <div class="video-item3"style=" max-width: 550px;min-height: 520px;" data-aos="fade-up" data-aos-duration="700">
                             <video controls>
                                 <source src="https://renovexenlinea.com/wp-content/uploads/2025/04/9-BASE-DE-DATOS-ORGANIZACION-DE-CLIENTES.mp4" type="video/mp4">
                                 Tu navegador no soporta el formato de video.
@@ -164,5 +174,19 @@ function cerrarMenu(){
 }
 
 </script>
+<script>
+    function validarFormulario(event) {
+        event.preventDefault(); // Evita que se recargue la página
+    
+        const usuario = document.getElementById("usuario").value;
+        const contraseña = document.getElementById("contraseña").value;
+    
+        if (usuario === "agmen" && contraseña === "fred2205") {
+            document.getElementById("registro").style.display = "none";
+        } else {
+            alert("Usuario o contraseña incorrectos");
+        }
+    }
+    </script>
 </body>
 </html>
